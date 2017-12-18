@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/_50sdp"
+        android:layout_marginLeft="@dimen/df_dialog_martin_left_right"
+        android:layout_marginRight="@dimen/df_dialog_martin_left_right"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/title_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:paddingBottom="@dimen/_8sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:text="Exit"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/df_dialog_title_text_size"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/list_view_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_dialog"
+            android:divider="@null"
+            android:dividerHeight="0dp"></ListView>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/_50sdp"
+        android:layout_marginLeft="@dimen/df_dialog_martin_left_right"
+        android:layout_marginRight="@dimen/df_dialog_martin_left_right"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/title_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:paddingBottom="@dimen/_8sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:text="@string/refresh_time_label"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/df_dialog_title_text_size"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/guide_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_dialog"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center_horizontal"
+            android:text="Enter custom interval in minutes"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_12sdp" />
+
+        <EditText
+            android:id="@+id/time_custom_edt"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/guide_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLines="1" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/time_custom_edt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/_35sdp"
+            android:layout_marginRight="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <Button
+                android:id="@+id/cancel_btn"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_27sdp"
+                android:layout_below="@id/radio_group"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_6sdp"
+                android:layout_weight="1"
+                android:background="@color/yellow_color"
+                android:text="@android:string/cancel"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/ok_btn"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_27sdp"
+                android:layout_below="@id/radio_group"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_6sdp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:text="@android:string/ok"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

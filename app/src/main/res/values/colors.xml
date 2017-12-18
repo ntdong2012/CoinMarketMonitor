@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#149739</color>
+    <color name="colorPrimaryDark">#149739</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="toast_bg">#dddfe0</color>
+    <color name="toast_bg2">#8Cdddfe0</color>
+    <color name="yellow_color">#fed676</color>
+    <color name="gray_color">#757575</color>
+
+    <color name="colorPrimary2">#d1c9da</color>
+    <color name="colorPrimary3">#0D149739</color>
+</resources>

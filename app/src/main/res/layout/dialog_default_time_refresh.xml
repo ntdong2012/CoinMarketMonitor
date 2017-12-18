@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/_50sdp"
+        android:layout_marginLeft="@dimen/df_dialog_martin_left_right"
+        android:layout_marginRight="@dimen/df_dialog_martin_left_right"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/title_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:paddingBottom="@dimen/_8sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:text="@string/refresh_time_label"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/df_dialog_title_text_size"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_dialog">
+
+            <RadioButton
+                android:id="@+id/radio_btn_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Every 5 minutes" />
+
+            <RadioButton
+                android:id="@+id/radio_btn_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Every 15 minutes" />
+
+            <RadioButton
+                android:id="@+id/radio_btn_30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Every 30 minutes" />
+
+            <RadioButton
+                android:id="@+id/radio_btn_1h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Every 1 hour" />
+
+            <RadioButton
+                android:id="@+id/radio_btn_3h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Every 3 hours" />
+
+            <RadioButton
+                android:id="@+id/radio_btn_custom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Custom" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_27sdp"
+            android:layout_below="@id/radio_group"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@color/yellow_color"
+            android:text="@android:string/cancel"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+</RelativeLayout>

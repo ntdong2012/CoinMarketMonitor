@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view_beacon"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_1sdp"
+    android:layout_marginRight="@dimen/_1sdp"
+    android:layout_marginTop="@dimen/_3sdp"
+    app:cardCornerRadius="@dimen/_5sdp"
+    app:cardElevation="@dimen/_2sdp"
+    app:contentPadding="@dimen/_5sdp">
+
+
+    <LinearLayout
+        android:id="@+id/coin_info_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:id="@+id/info_one"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/coin_name_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image_icon"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/_5sdp" />
+
+                <TextView
+                    android:id="@+id/coin_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/image_icon"
+                    android:text="aaaa"
+                    android:textSize="@dimen/_11sdp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/coin_price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/coin_name_wrapper"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+
+
+            <RelativeLayout
+                android:id="@+id/icon_wrapper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/favorite_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_bookmark_border_black_24dp" />
+
+                <ImageView
+                    android:id="@+id/alarm_icon"
+                    android:layout_width="@dimen/_14sdp"
+                    android:layout_height="@dimen/_14sdp"
+                    android:layout_below="@id/favorite_icon"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_alarm_add_black_24dp" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/one_hour_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_6sdp"
+                android:layout_toLeftOf="@id/icon_wrapper"
+                android:gravity="right"
+                android:text="aaaa"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/one_day_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/one_hour_tv"
+                android:layout_marginRight="@dimen/_6sdp"
+                android:layout_toLeftOf="@id/icon_wrapper"
+                android:gravity="right"
+                android:text="aaaa"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/last_update_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/one_day_tv"
+                android:layout_marginRight="@dimen/_6sdp"
+                android:layout_toLeftOf="@id/icon_wrapper"
+                android:gravity="right"
+                android:text="aaaa"
+                android:textSize="@dimen/_8sdp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

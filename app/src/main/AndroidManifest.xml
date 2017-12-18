@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dinostudio.coinmarketmonitor">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name=".base.apps.CoinApps"
+        android:allowBackup="true"
+        android:icon="@drawable/if_advantage_wallet_1034368"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="dinostudio.coinmarketmonitor.ui.activity.HomeActivity"
+            android:launchMode="singleInstance"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.CoinDetailActivity"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity android:name=".ui.activity.SettingActivity" />
+
+        <receiver android:name=".ui.receivers.UpdateCoinInfoReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <service android:name=".ui.service.UpdateCoinInfoService" />
+    </application>
+
+</manifest>

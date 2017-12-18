@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">Coin Market Monitor</string>
+    <string name="last_update_label">Last update: </string>
+    <string name="network_not_connect">Network not connected</string>
+    <string name="request_to_fast">Request update coin information after 5 minutes</string>
+    <string name="search_hint">Search coin ...</string>
+
+    <string name="menu_one">Sort order: Market Cap High to Low</string>
+    <string name="menu_two">Show price as: </string>
+    <string name="menu_three">Settings</string>
+    <string name="dialog_price_title">Show Price </string>
+    <string name="dialog_sort_title">Sort order</string>
+    <string name="sound_label">Sound</string>
+    <string name="vibration_label">Vibration</string>
+    <string name="alarm_label">Alarm setting</string>
+    <string name="refresh_label">Auto refresh</string>
+    <string name="refresh_time_label">Auto-refresh interval</string>
+    <string name="every_label">Every </string>
+    <string name="char_label">Chart</string>
+    <string name="loading_chart_data">Loading chart...</string>
+    <string name="detail_label">Details</string>
+    <string name="min_label">min </string>
+    <string name="favorite_label">Favorite coin </string>
+    <string name="only_display_favorite_coin">Display only favorite coin</string>
+    <string name="display_favorite_coin_first">Display favorite coin first</string>
+    <string name="banner_ad_unit_id">ca-app-pub-5874042652708882/3685147732</string>
+    <string name="banner_ad_unit_id2">ca-app-pub-5874042652708882/6634034264</string>
+    <string name="alarm_dialog_title">Set alarm</string>
+    <string name="current_price">Current price</string>
+    <string name="price_above">Price above</string>
+    <string name="price_below">Price below</string>
+    <string name="last_price">Last price: </string>
+    <string name="on_label">on</string>
+
+    <string name="symbol_label">Symbol</string>
+    <string name="price_usd_label">Price(USD)</string>
+    <string name="price_btc_label">Price(BTC)</string>
+    <string name="volume_day_label">24h Volume</string>
+    <string name="market_cab_label">Market Cab</string>
+    <string name="available_supply_label">Available Supply</string>
+    <string name="total_supply_label">Total Supply</string>
+    <string name="max_supply_label">Max Supply</string>
+    <string name="change_one_hour_label">Change 1h</string>
+    <string name="change_one_day_label">Change 24h</string>
+    <string name="change_one_week_label">Change 7d</string>
+    <string name="notification_title">Coin market notification</string>
+
+    <string-array name="char_time_label">
+        <item>DAY</item>
+        <item>WEEK</item>
+        <item>MONTH</item>
+        <item>YEAR</item>
+        <item>ALL</item>
+    </string-array>
+
+
+    <string-array name="price_type">
+        <item>USD</item>
+        <item>AUD</item>
+        <item>BRL</item>
+        <item>CAD</item>
+        <item>CNY</item>
+        <item>EUR</item>
+        <item>GBP</item>
+        <item>HKD</item>
+        <item>INR</item>
+        <item>JPY</item>
+        <item>KRW</item>
+        <item>MXN</item>
+        <item>RUB</item>
+    </string-array>
+
+    <string-array name="sort_item_label">
+        <item>Market Cap High to Low</item>
+        <item>Market Cap Low to High</item>
+        <item>Change (24h) High to Low</item>
+        <item>Change (24h) Low to High</item>
+        <item>Change (1h) High to Low</item>
+        <item>Change (1h) Low to High</item>
+        <item>Show Favorites First</item>
+    </string-array>
+
+    <string-array name="price_item_label">
+        <item>US Dollar</item>
+        <item>Australian Dollar</item>
+        <item>Canadian Dollar</item>
+        <item>Euro </item>
+        <item>British Pound</item>
+        <item>Hong Kong Dollar</item>
+        <item>Japanese Yen</item>
+        <item>Mexican Peso</item>
+        <item>Brazilian Real</item>
+        <item>Chinese Yuan</item>
+        <item>Indian Rupee</item>
+        <item>Korean Won</item>
+        <item>Russian Ruble</item>
+    </string-array>
+</resources>
