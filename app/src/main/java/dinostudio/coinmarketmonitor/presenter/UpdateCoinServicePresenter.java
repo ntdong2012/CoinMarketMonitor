@@ -62,6 +62,7 @@ public class UpdateCoinServicePresenter extends RxPresenter<UpdateCoinServiceCon
                             @Override
                             public void onNext(List<CoinInfo> lists) {
                                 mDataManager.saveCoinInfos((ArrayList<CoinInfo>) lists);
+                                checkForShowNotification((ArrayList<CoinInfo>) lists);
                             }
 
                             @Override

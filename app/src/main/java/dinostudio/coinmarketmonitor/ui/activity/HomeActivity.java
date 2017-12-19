@@ -52,17 +52,17 @@ public class HomeActivity extends BaseActivity<HomePresenter> implements HomeCon
     void handleMenuClick() {
         PopupMenu popup = new PopupMenu(HomeActivity.this, menuIv);
         popup.getMenuInflater().inflate(R.menu.popup_menu, popup.getMenu());
-        popup.getMenu().getItem(1).setTitle(getResources().getString(R.string.menu_two) + " " + mPresenter.getPriceValue());
+        popup.getMenu().getItem(0).setTitle(getResources().getString(R.string.menu_two) + " " + mPresenter.getPriceValue());
         popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
             public boolean onMenuItemClick(MenuItem item) {
-                if (item.getItemId() == R.id.one) {
-                    showShortOrder();
-                } else if (item.getItemId() == R.id.two) {
+//                if (item.getItemId() == R.id.one) {
+//                    showShortOrder();
+//                } else
+                if (item.getItemId() == R.id.two) {
                     showPriceAsDialog();
                 } else {
                     SettingActivity.callIntent(HomeActivity.this, new Bundle());
                 }
-
                 return true;
             }
         });

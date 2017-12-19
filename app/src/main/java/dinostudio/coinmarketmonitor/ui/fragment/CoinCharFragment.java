@@ -123,6 +123,7 @@ public class CoinCharFragment extends BaseFragment<CoinCharPresenter> implements
             public void onSetupAlarm(String coinId, boolean above, boolean bellow, float aboveVl, float belowValue) {
                 alarmDialog.dismiss();
                 mPresenter.onUpdateAlarmInfo(coinId, above, bellow, aboveVl, belowValue);
+                updateNotificationIcon();
 
             }
         });
@@ -289,6 +290,10 @@ public class CoinCharFragment extends BaseFragment<CoinCharPresenter> implements
 
         coinNameTv.setText(coinName);
         Glide.with(mContext).load("https://files.coinmarketcap.com/static/img/coins/64x64/" + coinId + ".png").into(coinIcon);
+        updateNotificationIcon();
+    }
+
+    private void updateNotificationIcon() {
         if (mPresenter.getAlarmInfo(coinId) != null) {
             alarmIcon.setColorFilter(mContext.getResources().getColor(R.color.yellow_color));
         } else {

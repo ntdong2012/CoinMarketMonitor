@@ -26,7 +26,7 @@ public class NotificationUtils {
         Notification.Builder builder = new Notification.Builder(context)
                 .setContentTitle(message)
                 .setContentText(context.getString(R.string.notification_title))
-                .setSmallIcon(R.drawable.if_advantage_wallet_1034368)
+                .setSmallIcon(R.drawable.if_advantage_wallet_1034368_mini)
                 .setContentIntent(pIntent)
                 .setAutoCancel(true);
 

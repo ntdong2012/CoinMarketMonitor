@@ -1,6 +1,8 @@
 package dinostudio.coinmarketmonitor.base.model.db;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 import javax.inject.Inject;
 
@@ -190,7 +192,7 @@ public class RealmHelper implements DBHelper {
 
     @Override
     public AlarmInfo getAlarmInfo(String id) {
-        return mRealm.where(AlarmInfo.class).equalTo("coinId", id).findFirst();
+        return mRealm.where(AlarmInfo.class).equalTo("coinId", id).equalTo("isEnable", 1).findFirst();
     }
 
     @Override
@@ -1029,6 +1031,20 @@ public class RealmHelper implements DBHelper {
                 coinInfos.add(useCoin);
             }
         }
+
+        Collections.sort(coinInfos, new Comparator<CoinInfo>() {
+            @Override
+            public int compare(CoinInfo coinInfo, CoinInfo t1) {
+                int rank1 = Integer.parseInt(coinInfo.getRank());
+                int rank2 = Integer.parseInt(t1.getRank());
+                int result = rank1 - rank2;
+                if (result > 0) {
+                    return 1;
+                } else if (result < 0) {
+                    return -1;
+                } else return 0;
+            }
+        });
 
 
         return coinInfos;
