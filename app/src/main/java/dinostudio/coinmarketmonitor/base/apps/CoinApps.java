@@ -29,7 +29,7 @@ public class CoinApps extends Application {
     private Set<Activity> allActivities;
 
     private boolean isUTMode = true;
-    private boolean isSendLog = false;
+    private boolean isSendLog = true;
 
     private static AppModule appModule;
     private static HttpModule httpModule;
@@ -73,7 +73,7 @@ public class CoinApps extends Application {
 //        LeakCanary.install(this);
 //        initAppModule();
 
-        initFont();
+//        initFont();
         Realm.init(getApplicationContext());
         if (isSendLog) {
             uncaughtHandler = Thread.getDefaultUncaughtExceptionHandler();
@@ -190,7 +190,7 @@ public class CoinApps extends Application {
                 intent.setType("plain/text");
                 intent.putExtra(Intent.EXTRA_EMAIL, mails);
                 intent.putExtra(Intent.EXTRA_SUBJECT,
-                        "[VOC for Bts] FC_Log");
+                        "[VOC for Coin Market Monitor] FC_Log");
                 intent.putExtra(Intent.EXTRA_TEXT, stackString);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
